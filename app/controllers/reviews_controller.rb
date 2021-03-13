@@ -36,6 +36,8 @@ class ReviewsController < ApplicationController
   # DELETE /reviews/1
   def destroy
     @review.destroy
+
+    render json: @review
   end
 
   private
